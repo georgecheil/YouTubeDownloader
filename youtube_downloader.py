@@ -25,7 +25,7 @@ def downloadFunction():
     
     if(len(url_get) > 1):
         ytdError.config(text="")
-        youtube  = YouTube(url_get)   #!!!
+        youtube  = YouTube(url_get)  
 
         if(user_choice == choices[0]):
             video = youtube .streams.get_highest_resolution()
@@ -50,7 +50,6 @@ def downloadFunction():
 
 root = Tk()
 root.title("YouTube Downloader")
-#root.iconbitmap('c:/Users/georg/OneDrive - unipi.gr/Pictures/YTD.ico')
 root.geometry("400x450")    #window dimentions
 root.columnconfigure(0, weight=1) #all in center
 root.configure(bg="#c4e6ff")
